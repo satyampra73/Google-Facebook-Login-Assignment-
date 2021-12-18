@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "475781078699",
+    "project_id": "facebook-login-866ba",
+    "storage_bucket": "facebook-login-866ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:475781078699:android:236d99df285a90da2d21ee",
+        "android_client_info": {
+          "package_name": "com.satyam.googlefacebooklogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "475781078699-6fijanrq0hu8cqbeqo8hhdf95n8gs5kg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjgazQBiRXYTseJtkhmlu_JizQpPqap34"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "475781078699-6fijanrq0hu8cqbeqo8hhdf95n8gs5kg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
