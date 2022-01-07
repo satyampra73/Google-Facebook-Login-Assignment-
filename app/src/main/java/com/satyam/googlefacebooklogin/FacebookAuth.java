@@ -3,6 +3,7 @@ package com.satyam.googlefacebooklogin;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -30,12 +31,13 @@ import java.util.Arrays;
 public class FacebookAuth extends AppCompatActivity {
     FirebaseAuth mAuth;
     CallbackManager callbackManager;
-
+    TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_facebook_auth);
         mAuth = FirebaseAuth.getInstance();
+        textView=findViewById(R.id.textView);
         callbackManager = CallbackManager.Factory.create();
         LoginManager.getInstance().logInWithReadPermissions(this, Arrays.asList("public_profile"));
 
@@ -48,6 +50,7 @@ public class FacebookAuth extends AppCompatActivity {
 
                     @Override
                     public void onCancel() {
+                        textView.setText("");
                        Intent intent=new Intent(FacebookAuth.this,MainActivity.class);
                        intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
                        startActivity(intent);
@@ -92,6 +95,7 @@ public class FacebookAuth extends AppCompatActivity {
     private void updateUI(FirebaseUser user) {
         Intent intent = new Intent(FacebookAuth.this, home_page.class);
         startActivity(intent);
+        Toast.makeText(FacebookAuth.this, "Signed in successfully with Facebook", Toast.LENGTH_SHORT).show();
     }
 
 }

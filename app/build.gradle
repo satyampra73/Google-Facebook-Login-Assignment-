@@ -4,12 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 30
+    compileSdk 32
 
     defaultConfig {
         applicationId "com.satyam.googlefacebooklogin"
         minSdk 21
-        targetSdk 30
+        targetSdk 32
         versionCode 1
         versionName "1.0"
 
@@ -26,8 +26,8 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-    compileSdkVersion 'android-S'
-    buildToolsVersion '30.0.3'
+    compileSdkVersion 32
+    buildToolsVersion '32.0.0'
 }
 
 dependencies {

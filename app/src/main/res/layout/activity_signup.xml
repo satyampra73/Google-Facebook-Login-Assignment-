@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Signup">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbg"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradientbg"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/white"
+                android:text="Social"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="60sp"
+                android:textColor="@color/white"
+                android:text="x"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradientbg"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignin"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:text="Sign in"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnSignUp"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="#ff471a"
+                android:text="Sign up"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

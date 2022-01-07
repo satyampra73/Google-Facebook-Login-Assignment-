@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -18,26 +19,19 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class home_page extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
-    Button button,button2;
+    Button button2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        button=findViewById(R.id.button);
         button2=findViewById(R.id.button2);
         setTitle("home page");
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                signOut();
-                finish();
-                Toast.makeText(home_page.this, "Signed out", Toast.LENGTH_SHORT).show();
-            }
-        });
+
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -53,13 +47,4 @@ public class home_page extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    private void signOut() {
-        mGoogleSignInClient.signOut()
-                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        // ...
-                    }
-                });
-    }
 }

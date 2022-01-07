@@ -26,6 +26,7 @@ import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.Task;
 
 public class MainActivity extends AppCompatActivity {
+    private Button btnSignUp;
     CallbackManager callbackManager;
     GoogleSignInClient mGoogleSignInClient;
     ImageView F_login;
@@ -35,6 +36,15 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        btnSignUp=findViewById(R.id.btnSignUp);
+        btnSignUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,Signup.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION);
+                startActivity(intent);
+            }
+        });
         F_login = findViewById(R.id.f_login);
         callbackManager = CallbackManager.Factory.create();
 

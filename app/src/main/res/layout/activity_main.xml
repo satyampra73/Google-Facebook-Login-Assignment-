@@ -4,26 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
+    android:background="#d6d6c2"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbg"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradientbg"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/white"
+            android:text="Social"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="60sp"
+            android:textColor="@color/white"
+            android:text="x"/>
+    </LinearLayout>
 
-    <ImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="250dp"
-        android:clickable="true"
-        android:onClick="Gsignin"
-        android:src="@drawable/google"
-        tools:ignore="SpeakableTextPresentCheck" />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/buttunbg"
+    android:orientation="horizontal">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSignin"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/buttunbg"
+            android:text="Sign in"/>
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSignUp"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/black"
+        android:backgroundTint="#fff"
+        android:text="Sign Up"/>
+</LinearLayout>
+    </LinearLayout>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="550dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="30dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in to your"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ff0000"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#ff0000"
+            android:layout_marginLeft="20dp"/>
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="250dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="Gsignin"
+            android:src="@drawable/google"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
-    <ImageView
-        android:id="@+id/f_login"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:clickable="true"
-        android:src="@drawable/facebook"
-        tools:ignore="SpeakableTextPresentCheck" />
+        <ImageView
+            android:id="@+id/f_login"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/facebook"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
 </LinearLayout>
