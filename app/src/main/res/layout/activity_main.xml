@@ -102,14 +102,14 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="40dp"
-                android:hint="Name"
+                android:hint="Email Id"
                 app:endIconDrawable="@drawable/ic_baseline_person_24"
                 app:endIconMode="custom"
                 app:endIconTint="@color/red"
                 app:hintTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText"
+                    android:id="@+id/etEmailID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white" />
@@ -131,7 +131,7 @@
                 app:startIconTint="#ff0000">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/textInputEditText2"
+                    android:id="@+id/etPass"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -239,6 +239,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogIn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:text="Sign in"
