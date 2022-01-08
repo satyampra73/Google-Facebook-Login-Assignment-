@@ -19,25 +19,16 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class home_page extends AppCompatActivity {
     GoogleSignInClient mGoogleSignInClient;
-    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
-        button2=findViewById(R.id.button2);
         setTitle("home page");
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-            }
-        });
     }
 
     @Override

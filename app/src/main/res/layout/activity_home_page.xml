@@ -8,10 +8,10 @@
     android:orientation="vertical"
     tools:context=".home_page">
 
-  <Button
-      android:id="@+id/button2"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="40dp"
-      android:text="Sign out from facebook" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
 </LinearLayout>
