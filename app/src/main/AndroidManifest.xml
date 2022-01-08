@@ -20,7 +20,9 @@
             android:exported="false" />
         <activity
             android:name=".home_page"
-            android:exported="true" />
+            android:exported="true" >
+
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="true">

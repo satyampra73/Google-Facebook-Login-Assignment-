@@ -95,7 +95,7 @@ public class FacebookAuth extends AppCompatActivity {
     private void updateUI(FirebaseUser user) {
         Intent intent = new Intent(FacebookAuth.this, home_page.class);
         startActivity(intent);
-        Toast.makeText(FacebookAuth.this, "Signed in successfully with Facebook", Toast.LENGTH_SHORT).show();
+        Toast.makeText(FacebookAuth.this, "Signed in successfully with Facebook\n"+user.getDisplayName(), Toast.LENGTH_SHORT).show();
     }
 
 }

@@ -189,26 +189,27 @@
                     android:text="or"
                     android:textColor="@color/black" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10dp"
-                    android:clickable="true"
-                    android:focusable="true"
-                    android:onClick="Gsignin"
-                    android:src="@drawable/google"
-                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
                 <ImageView
                     android:id="@+id/f_login"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="20dp"
+                    android:layout_marginLeft="10dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:src="@drawable/facebook"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:onClick="Gsignin"
+                    android:src="@drawable/google"
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
             </LinearLayout>
@@ -242,11 +243,11 @@
         android:id="@+id/btnLogIn"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="Sign in"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:textAllCaps="false"
         android:layout_marginTop="5dp"
-        android:background="@drawable/buttunbg"/>
+        android:background="@drawable/buttunbg"
+        android:text="Sign in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 </LinearLayout>
